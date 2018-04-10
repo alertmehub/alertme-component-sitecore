@@ -2,9 +2,9 @@
 version: 1
 id: {39DE5BBD-C707-4E52-AABD-49736F906781}
 database: master
-path: /sitecore/layout/Renderings/Modules/Alertme/Alertme Control Panel
+path: /sitecore/layout/Renderings/Modules/AlertMe/AlertMe Control Panel
 parent: {38F501CD-9A4B-425B-B490-C28F30FEDC7E}
-name: Alertme Control Panel
+name: AlertMe Control Panel
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
@@ -14,20 +14,20 @@ created: 20180205T214410Z
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 57
+content-length: 54
 
 RDA.Alertme.Controllers.AlertmeController, RDA.Alertme
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 8
+content-length: 7
 
 Alertme
 ----version----
 language: en
 version: 1
-revision: 607cd3dc-d8e3-4099-b6df-b881f0eb21c5
+revision: e748af01-fc07-4ef0-9aa8-86088802b0ae
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-607cd3dc-d8e3-4099-b6df-b881f0eb21c5
+e748af01-fc07-4ef0-9aa8-86088802b0ae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180329T152245Z
+20180410T212310Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
