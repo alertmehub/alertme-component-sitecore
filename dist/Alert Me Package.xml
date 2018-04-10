@@ -1,0 +1,85 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Alert Me</PackageName>
+      <Author>RDA Corporation</Author>
+      <Version>1.0.0.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>After the package is installed:
+
+1) Put your API Key and Client Id in the settings file located at /sitecore/system/Modules/NetPrefs/Settings.
+
+2) Publish these folders and their contents to the web database:
+     - /sitecore/templates/NetPrefs
+     - /sitecore/system/Modules/NetPrefs
+     - /sitecore/layout/Renderings/Modules/NetPrefs
+
+3) Put the /sitecore/layout/Renderings/Modules/NetPrefs/NetPrefs Alert Center rendering on the page you want the module to display.</Readme>
+      <Publisher>RDA Corporation</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Renderings/Modules/AlertMe/{38F501CD-9A4B-425B-B490-C28F30FEDC7E}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Modules/AlertMe/AlertMe Control Panel/{39DE5BBD-C707-4E52-AABD-49736F906781}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/AlertMe/{EBC3FC51-3D69-40D6-859B-E0E313C6700C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/AlertMe/Settings/{E69316BD-1A7D-4715-84B0-4A2243EDC862}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AlertMe/{1D3F4CE1-0209-412A-9985-3A7131AA5770}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AlertMe/Settings/{2CD833CF-F38E-425C-A306-22C75C012732}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AlertMe/Settings/Settings/{45D47C68-8BF3-4229-BEC0-D68FD7FF16AC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AlertMe/Settings/Settings/API Token/{CFAC1C59-D601-40BF-B825-6A7C3FABB1F4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AlertMe/Settings/Settings/Client Id/{03F670FB-29BB-4FAA-B6A9-55574F63DB26}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>AlertMe Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/NetPrefs/NetPrefs.config</x-item>
+        <x-item>/assets/js/tokenApi/alertme.1.2.js</x-item>
+        <x-item>/bin/RDA.NetPrefs.dll</x-item>
+        <x-item>/Views/NetPrefs/NetPrefs.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>AlertMe Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
