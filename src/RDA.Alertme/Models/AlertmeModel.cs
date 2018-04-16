@@ -2,7 +2,7 @@
 	public class AlertmeModel {
 		public string APIToken{	get; set; }
 
-		public string ClientId { get; set; }
+		public string PublisherId { get; set; }
 
 		public string CustomerId { get; set; }
 

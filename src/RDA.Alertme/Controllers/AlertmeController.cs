@@ -26,19 +26,19 @@ namespace RDA.Alertme.Controllers
 				return View(model);
 			}
 
-			//Read client id and api token from settings item
+			//Read publisher id and api token from settings item
 			string apiToken = string.Empty;
-			string clientId = string.Empty;
+			string publisherId = string.Empty;
 			try {
 				apiToken = settingsItem.Fields["API Token"].Value;
 				Sitecore.Diagnostics.Assert.IsNotNullOrEmpty(apiToken, "API Token must not be empty.");
-				clientId = settingsItem.Fields["Client Id"].Value;
-				Sitecore.Diagnostics.Assert.IsNotNullOrEmpty(clientId, "Client Id must not be empty.");
+				publisherId = settingsItem.Fields["Publisher Id"].Value;
+				Sitecore.Diagnostics.Assert.IsNotNullOrEmpty(publisherId, "Publisher Id must not be empty.");
 				model.APIToken = apiToken;
-				model.ClientId = clientId;
+				model.PublisherId = publisherId;
 			}
 			catch(Exception ex) {
-				Sitecore.Diagnostics.Log.Error("Alertme: Invalid value for API Token or Client Id in settings item.", this);
+				Sitecore.Diagnostics.Log.Error("Alertme: Invalid value for API Token or Publisher Id in settings item.", this);
 				model.ErrorMessage = errorMessage;
 				return View(model);
 			}
@@ -58,7 +58,7 @@ namespace RDA.Alertme.Controllers
 			//Get customer token
 			string customerToken = string.Empty;
 			try {
-				customerToken = GetToken(apiToken, clientId, args.UserId);
+				customerToken = GetToken(apiToken, args.UserId);
 				model.CustomerToken = customerToken;
 			} catch (Exception ex) {
 				Sitecore.Diagnostics.Log.Error("Alertme: There was an error getting the customer token." + Environment.NewLine + ex.Message + Environment.NewLine + ex.StackTrace, this);
@@ -68,9 +68,9 @@ namespace RDA.Alertme.Controllers
 			
 			return View(model);
 		}
-        private string GetToken(string apiToken, string clientId, string customerId)
+        private string GetToken(string apiToken, string customerId)
         {
-            string tokenUrl = "https://api.alertmehub.com/api/token/" + clientId + "/" + customerId;
+            string tokenUrl = "https://api.alertmehub.com/api/token/v1/" + customerId;
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Add("Authorization", apiToken);             

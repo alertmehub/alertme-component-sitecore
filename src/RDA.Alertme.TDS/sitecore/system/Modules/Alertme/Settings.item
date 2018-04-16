@@ -19,8 +19,8 @@ content-length: 0
 
 ----field----
 field: {03F670FB-29BB-4FAA-B6A9-55574F63DB26}
-name: Client Id
-key: client id
+name: Publisher Id
+key: publisher id
 content-length: 0
 
 

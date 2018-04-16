@@ -10,7 +10,7 @@
 			</div>
 			@if (string.IsNullOrEmpty(Model.ErrorMessage)) {
 				<div class="card-block u-info-v1-1" style="overflow:visible">
-                    <alertme-preference-center client="@Model.ClientId" token="@Model.CustomerToken" custId="@Model.CustomerId"></alertme-preference-center>
+                    <alertme-preference-center publisher="@Model.PublisherId" token="@Model.CustomerToken" custId="@Model.CustomerId"></alertme-preference-center>
 				</div>
 			} else {
 				<p>@Model.ErrorMessage</p>
