@@ -70,7 +70,7 @@ namespace RDA.Alertme.Controllers
 		}
         private string GetToken(string apiToken, string customerId)
         {
-            string tokenUrl = "https://api.alertmehub.com/api/subscriber/token/v1/" + customerId;
+            string tokenUrl = "https://api.alertmehub.com/api/v1/subscriber/token/" + customerId;
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Add("Authorization", apiToken);             
