@@ -1,22 +1,11 @@
 ﻿@model RDA.Alertme.Models.AlertmeModel
 
-<div class="row g-mb-40">
-	<div class="col-lg-12 g-mb-40 g-mb-0--lg">
-		<div class="card border-0">
-			<div class="card-header d-flex align-items-center justify-content-between g-bg-gray-light-v5 border-0 g-mb-15">
-				<h3 class="h6 mb-0">
-					<i class="icon-layers g-pos-rel g-top-1 g-mr-5"></i> Demo Control Panel
-				</h3>
-			</div>
-			@if (string.IsNullOrEmpty(Model.ErrorMessage)) {
-				<div class="card-block u-info-v1-1" style="overflow:visible">
-                    <alertme-preference-center publisher="@Model.PublisherId" token="@Model.CustomerToken" custId="@Model.CustomerId"></alertme-preference-center>
-				</div>
-			} else {
-				<p>@Model.ErrorMessage</p>
-			}
-		</div>
-	</div>
-</div>
+@if (string.IsNullOrEmpty(Model.ErrorMessage)) {
+    <div style="overflow:visible">
+        <alertme-preference-center publisher="@Model.PublisherId" token="@Model.CustomerToken" custId="@Model.CustomerId"></alertme-preference-center>
+    </div>
+} else {
+    <p>@Model.ErrorMessage</p>
+}
 
-<script src="~/assets/js/alertme-1.0.4.min.js"></script>
+<script src="/assets/js/alertme.1.2.js"></script>

@@ -101,6 +101,7 @@
     <Content Include="assets\js\alertme.1.2.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\AlertmeController.cs" />
     <Compile Include="Models\AlertmeModel.cs" />
     <Compile Include="AlertmePipelineArgs.cs" />
@@ -108,7 +109,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Alertme\Alertme.cshtml" />
     <Content Include="App_Config\Include\Alertme\Alertme.config" />
