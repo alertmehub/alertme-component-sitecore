@@ -1,9 +1,9 @@
 ﻿using System.Web.Security;
 using Sitecore.Security.Accounts;
 
-namespace RDA.Alertme {
-	public class AlertmeUserIdProcessor {
-		public void Process(AlertmePipelineArgs args) {
+namespace RDA.AlertMe {
+	public class AlertMeUserIdProcessor {
+		public void Process(AlertMePipelineArgs args) {
 			args.UserId = GetUserId();
 		}
 

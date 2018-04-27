@@ -16,18 +16,18 @@ name: Controller
 key: controller
 content-length: 54
 
-RDA.Alertme.Controllers.AlertmeController, RDA.Alertme
+RDA.AlertMe.Controllers.AlertMeController, RDA.AlertMe
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
 content-length: 7
 
-Alertme
+AlertMe
 ----version----
 language: en
 version: 1
-revision: e748af01-fc07-4ef0-9aa8-86088802b0ae
+revision: b9c9abf9-2e15-43b9-832a-158698c28469
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e748af01-fc07-4ef0-9aa8-86088802b0ae
+b9c9abf9-2e15-43b9-832a-158698c28469
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180410T212310Z
+20180427T135452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

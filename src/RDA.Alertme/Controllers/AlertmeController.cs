@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Net.Http;
 using System.Web.Mvc;
-using RDA.Alertme.Models;
+using RDA.AlertMe.Models;
+using Sitecore.Mvc.Controllers;
 
-namespace RDA.Alertme.Controllers {
-    public class AlertmeController : Controller {
-        public ActionResult Alertme() {
+namespace RDA.AlertMe.Controllers {
+    public class AlertMeController : SitecoreController {
+        public ActionResult AlertMe() {
             const string errorMessage = "We're sorry. We are unable to load Alert Me at this time.";
-            AlertmeModel model = new AlertmeModel();
+            AlertMeModel model = new AlertMeModel();
             Sitecore.Data.Items.Item settingsItem;
 
             //Get settings item from Sitecore
@@ -38,7 +39,7 @@ namespace RDA.Alertme.Controllers {
 
             //Run pipeline to get user id
             try {
-                AlertmePipelineArgs args = new AlertmePipelineArgs();
+                AlertMePipelineArgs args = new AlertMePipelineArgs();
                 Sitecore.Pipelines.CorePipeline.Run("Alertme", args);
                 model.CustomerId = args.UserId;
             } catch (Exception ex) {

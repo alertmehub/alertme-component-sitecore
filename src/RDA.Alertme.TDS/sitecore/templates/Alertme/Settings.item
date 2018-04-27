@@ -2,7 +2,7 @@
 version: 1
 id: {2CD833CF-F38E-425C-A306-22C75C012732}
 database: master
-path: /sitecore/templates/Alertme/Settings
+path: /sitecore/templates/AlertMe/Settings
 parent: {1D3F4CE1-0209-412A-9985-3A7131AA5770}
 name: Settings
 master: {00000000-0000-0000-0000-000000000000}

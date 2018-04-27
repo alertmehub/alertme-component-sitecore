@@ -2,13 +2,18 @@
 version: 1
 id: {E69316BD-1A7D-4715-84B0-4A2243EDC862}
 database: master
-path: /sitecore/system/Modules/Alertme/Settings
+path: /sitecore/system/Modules/AlertMe/Settings
 parent: {EBC3FC51-3D69-40D6-859B-E0E313C6700C}
 name: Settings
 master: {00000000-0000-0000-0000-000000000000}
 template: {2CD833CF-F38E-425C-A306-22C75C012732}
 templatekey: Settings
 created: 20180205T215049Z
+
+----version----
+language: en
+version: 1
+revision: da683259-804d-4dd8-b268-4d166a3014bc
 
 ----field----
 field: {CFAC1C59-D601-40BF-B825-6A7C3FABB1F4}
@@ -23,11 +28,6 @@ name: Publisher Id
 key: publisher id
 content-length: 0
 
-
-----version----
-language: en
-version: 1
-revision: da683259-804d-4dd8-b268-4d166a3014bc
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}

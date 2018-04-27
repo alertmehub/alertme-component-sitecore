@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 
-namespace RDA.Alertme {
+namespace RDA.AlertMe {
     public static class Constants {
         public static class Modules {
             public static class Settings {

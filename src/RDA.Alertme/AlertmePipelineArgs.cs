@@ -1,5 +1,5 @@
-﻿namespace RDA.Alertme {
-	public class AlertmePipelineArgs : Sitecore.Pipelines.PipelineArgs {
+﻿namespace RDA.AlertMe {
+	public class AlertMePipelineArgs : Sitecore.Pipelines.PipelineArgs {
 		public string UserId { get; set; }
 	}
 }

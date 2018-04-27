@@ -2,9 +2,9 @@
 version: 1
 id: {1D3F4CE1-0209-412A-9985-3A7131AA5770}
 database: master
-path: /sitecore/templates/Alertme
+path: /sitecore/templates/AlertMe
 parent: {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
-name: Alertme
+name: AlertMe
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
@@ -13,7 +13,7 @@ created: 20180205T213709Z
 ----version----
 language: en
 version: 1
-revision: b23470d0-e6c3-4dfc-a8d6-0928647b0221
+revision: 2cad024b-4ede-4a98-9078-75659532dc41
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b23470d0-e6c3-4dfc-a8d6-0928647b0221
+2cad024b-4ede-4a98-9078-75659532dc41
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180329T150047Z
+20180427T135131Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

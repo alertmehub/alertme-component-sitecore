@@ -1,19 +1,19 @@
 ----item----
 version: 1
-id: {38F501CD-9A4B-425B-B490-C28F30FEDC7E}
+id: {C6B42D3A-06DB-43FB-9FE3-1B7DF07B7B94}
 database: master
-path: /sitecore/layout/Renderings/Modules/AlertMe
-parent: {F6F41DF7-80BE-4E31-9B8F-4C3772628EB1}
-name: AlertMe
+path: /sitecore/templates/AlertMe/Settings/Settings
+parent: {2CD833CF-F38E-425C-A306-22C75C012732}
+name: Settings
 master: {00000000-0000-0000-0000-000000000000}
-template: {7EE0975B-0698-493E-B3A2-0B2EF33D0522}
-templatekey: Rendering Folder
-created: 20180205T214321Z
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20180427T134220Z
 
 ----version----
 language: en
 version: 1
-revision: 9f587caa-c0b2-4b5e-8e74-d0a5aa58c931
+revision: d9ce4603-dcb2-490a-922f-bc61aff810ac
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -21,21 +21,28 @@ name: __Created
 key: __created
 content-length: 16
 
-20180205T214321Z
+20180427T134220Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-9f587caa-c0b2-4b5e-8e74-d0a5aa58c931
+d9ce4603-dcb2-490a-922f-bc61aff810ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180427T135115Z
+20180427T134220Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

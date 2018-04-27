@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RDA.Alertme</RootNamespace>
-    <AssemblyName>RDA.Alertme</AssemblyName>
+    <RootNamespace>RDA.AlertMe</RootNamespace>
+    <AssemblyName>RDA.AlertMe</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -102,16 +102,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Controllers\AlertmeController.cs" />
-    <Compile Include="Models\AlertmeModel.cs" />
-    <Compile Include="AlertmePipelineArgs.cs" />
-    <Compile Include="AlertmeUserIdProcessor.cs" />
+    <Compile Include="Controllers\AlertMeController.cs" />
+    <Compile Include="Models\AlertMeModel.cs" />
+    <Compile Include="AlertMePipelineArgs.cs" />
+    <Compile Include="AlertMeUserIdProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Views\Alertme\Alertme.cshtml" />
-    <Content Include="App_Config\Include\Alertme\Alertme.config" />
+    <Content Include="Views\AlertMe\AlertMe.cshtml" />
+    <Content Include="App_Config\Include\AlertMe\AlertMe.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup />
