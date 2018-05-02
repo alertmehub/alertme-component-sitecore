@@ -7,7 +7,7 @@ using Sitecore.Mvc.Controllers;
 namespace RDA.AlertMe.Controllers {
     public class AlertMeController : SitecoreController {
         public ActionResult AlertMe() {
-            const string errorMessage = "We're sorry. We are unable to load Alert Me at this time.";
+            const string errorMessage = "We're sorry. We are unable to load Alertme at this time.";
             AlertMeModel model = new AlertMeModel();
             Sitecore.Data.Items.Item settingsItem;
 
