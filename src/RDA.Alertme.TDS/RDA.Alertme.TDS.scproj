@@ -32,7 +32,7 @@
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\Alertme\Website</SitecoreDeployFolder>
-    <SitecoreAccessGuid>045f5b99-442f-4e0c-8a6e-c672d8a049bc</SitecoreAccessGuid>
+    <SitecoreAccessGuid>a7429146-2688-4966-b0b6-15c736c2f0a1</SitecoreAccessGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>

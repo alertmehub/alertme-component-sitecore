@@ -40,7 +40,7 @@ namespace RDA.AlertMe.Controllers {
             //Run pipeline to get user id
             try {
                 AlertMePipelineArgs args = new AlertMePipelineArgs();
-                Sitecore.Pipelines.CorePipeline.Run("Alertme", args);
+                Sitecore.Pipelines.CorePipeline.Run("AlertMe", args);
                 model.CustomerId = args.UserId;
             } catch (Exception ex) {
                 Sitecore.Diagnostics.Log.Error($"Alertme: Unable to get the user id.{Environment.NewLine}{ex.Message}{Environment.NewLine}{ex.StackTrace}", this);
