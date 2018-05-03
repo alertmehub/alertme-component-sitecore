@@ -3,7 +3,7 @@
     <metadata>
       <PackageName>Alert Me</PackageName>
       <Author>RDA Corporation</Author>
-      <Version>1.0.0.0</Version>
+      <Version>1.0.4</Version>
       <Revision />
       <License />
       <Comment />
@@ -28,14 +28,23 @@
     <xfiles>
       <Entries>
         <x-item>/App_Config/Include/AlertMe/AlertMe.config</x-item>
-        <x-item>/assets/js/alertme.1.2.js</x-item>
         <x-item>/bin/RDA.AlertMe.dll</x-item>
+        <x-item>/assets/js/alertme-1.0.4.min.js</x-item>
         <x-item>/Views/AlertMe/AlertMe.cshtml</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>
           <Root>/</Root>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </FileToEntryConverter>
       </Converter>
       <Include />
